@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: powderblue;
+}
+
+.container {
+  display: flex;
+  width: 97vw;
+  height: 98vh;
+  position: relative;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+  height: 100%;
+  transition: flex 3s ease-out;
+}
+
+.row {
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 1;
+  position: relative;
+  height: 100%;
+  margin: 3px;
+  /* these lines stop the innerHTML displaying or taking up space */
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  /* Above lines hide text in theory but don't seem to work*/
+  color: rgba(255, 255, 255, 0);
+  transition: flex 2s ease-out, opacity 1.5s ease-out, border-radius 5s, border 3s ease-out;
+  border: rgb(231, 253, 255) 4px solid;
+  border-radius: 30px;
+  opacity: 0.5;
+}
+
+.activeCol {
+  flex: 15;
+  border-radius: 50px;
+}
+
+.activeRow {
+  flex: 8;
+  border-radius: 50px;
+}
+
+.activePanel {
+  flex: 15;
+  opacity: 1;
+  border-radius: 100px;
+  border: white 6px solid;
+}
+
+@media (max-width: 1200px) {
+  .col:nth-of-type(14), .col:nth-of-type(15), .col:nth-of-type(16) {
+    display: none;
+  }
+  .row9, .ro18, .row27, .row36, .row45, .row54, .row63, .row72, .row81, .row90, .row99, .row108, .row117, .row126, .row135, .row144 {
+    display: none;
+  }
+  .activeCol {
+    flex: 20;
+  }
+  .activeRow {
+    flex: 11;
+  }
+  .activePanel {
+    flex: 20;
+  }
+}
+
+@media (max-width: 800px) {
+  .col:nth-of-type(11), .col:nth-of-type(12), .col:nth-of-type(13) {
+    display: none;
+  }
+  .row8, .ro17, .row26, .row35, .row44, .row53, .row62, .row71, .row80, .row89, .row98, .row107, .row116, .row125, .row134, .row143 {
+    display: none;
+  }
+  .activeCol {
+    flex: 25;
+  }
+  .activeRow {
+    flex: 10;
+  }
+  .activePanel {
+    flex: 25;
+  }
+}
