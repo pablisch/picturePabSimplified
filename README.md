@@ -2,6 +2,8 @@
 
 ## Description
 
+This is a simple adaptation of my [picture-pad-flex-morph](https://github.com/pablisch/picture-pad-flex-morph) project to showcase some of my travel and adventure images for my extended CV links.
+
 A simple, playful project for amusement, exploration, and learning.
 I created Picture Pad Flex Morpher during self-study of JS, HTML, and CSS prior to any formal learning. It was a natural progression from the [Nonsense Pad](https://github.com/pablisch/nonsense-pad-sampler) project.
 
