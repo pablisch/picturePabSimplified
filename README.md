@@ -1,4 +1,4 @@
-# Picture Pad Flex Morpher
+# Travel and Adventure images(Picture Pad Flex Morpher) for extended CV link
 
 ## Description
 
@@ -14,7 +14,5 @@ The dilemma, largely intentional, is that the focus photo is large and therefore
 Clone the repository and open index.html in your browser, `open index.html`.
 
 ## Usage
-![Picture Pad Flex Morpher](images/picture-pad.png)
+![Picture Pad Flex Morpher](images/travel-images-on-picture-pad-flex-morpher.png)
 Open and play.
-
-![Picture Pad Flex Morpher](images/picture-pad.gif)
